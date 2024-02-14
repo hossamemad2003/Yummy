@@ -1,0 +1,6 @@
+<div class="container row">
+  <div class="box col-3" *ngFor="let item of country" (click)="gotoMeal()">
+    <i class="fa-solid fa-house-laptop"></i>
+    <p>{{ item.strArea }}</p>
+  </div>
+</div>

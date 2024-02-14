@@ -1,0 +1,30 @@
+.container{
+  margin-left: 110px;
+  margin-top: 10px;
+  .header {
+      height: 300px;
+      text-align: center;
+      h3 {
+        color: whitesmoke;
+        font-size: 40px;
+        transition-duration: 1.5s;
+      }
+
+      h3:hover {
+        color: red;
+      }
+    }
+
+    form {
+      margin-top: -200px;
+      textarea {
+        color: rgb(71, 69, 69);
+      }
+      button {
+        margin-left: 45%;
+        margin-top: 10px;
+        width: 160px;
+        height: 60px;
+      }
+    }
+}

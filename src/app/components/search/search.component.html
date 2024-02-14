@@ -1,0 +1,35 @@
+<div class="container">
+  <form class="form" [formGroup]="searchForm">
+    <div class="mb-3">
+      <input
+        [(ngModel)]="mealName"
+        (change)="filterMealByName()"
+        formControlName="name"
+        type="email"
+        class="form-control"
+        placeholder="search by name"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        [(ngModel)]="mealLetter"
+        (change)="filterMealByLetter()"
+        formControlName="firstLetter"
+        type="email"
+        class="form-control"
+        placeholder="search by first letter"
+      />
+    </div>
+    <button class="btn btn-success">search</button>
+  </form>
+  <div class="row">
+    <div
+      class="box col-md-3 col-sm-6"
+      (click)="gotoMealDetail(item.id)"
+      *ngFor="let item of filterMealList"
+    >
+      <img [src]="item.strMealThumb" alt="" />
+      <h3>{{ item.strMeal }}</h3>
+    </div>
+  </div>
+</div>

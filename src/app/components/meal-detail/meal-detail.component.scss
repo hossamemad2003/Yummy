@@ -1,0 +1,51 @@
+.container{
+  margin-left: 110px;
+  margin-top: 10px;
+  .box{
+    display: flex;
+    .meal{
+      width: 55%;
+      text-align: center;
+      img{
+        width: 350px;
+        height: 350px;
+        border-radius: 5%;
+      }
+      h3{
+        margin-top: 10px;
+      }
+    }
+    .content{
+      margin-left: 10%;
+      margin-right: 50px;
+      p{
+        line-height: 1.7;
+      }
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          width: 150px;
+          height: 30px;
+          text-align: center;
+          margin-left: 10px;
+          margin-bottom: 10px;
+          background-color: #cff4fc;
+          color: #055160;
+          border-radius: 50%;
+
+        }
+      }
+    }
+  }
+  button{
+    margin-left: 45%;
+    width: 150px;
+    height: 50px;
+  }
+}
+@media ( max-width: 845px){
+.box{
+  flex-direction: column;
+}
+}

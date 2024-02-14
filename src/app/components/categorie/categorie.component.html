@@ -1,0 +1,14 @@
+<div class="container row justify-content-around">
+  <div
+    class="box mt-4 d-flex justify-content-center align-items-center col-3"
+    *ngFor="let item of prd"
+  >
+    <img [src]="item.strCategoryThumb" alt="" />
+    <div class="content">
+      <h3>{{ item.strCategory }}</h3>
+      <p>
+        {{ item.strCategoryDescription }}
+      </p>
+    </div>
+  </div>
+</div>

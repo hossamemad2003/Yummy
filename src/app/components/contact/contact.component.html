@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="header">
+    <h3>contact with us.</h3>
+  </div>
+  <form [formGroup]="contactForm">
+    <div class="mb-3">
+      <input
+        formControlName="email"
+        type="email"
+        class="form-control"
+        placeholder="write your email"
+      />
+    </div>
+    <textarea
+      formControlName="message"
+      class="form-control"
+      placeholder="write you message here"
+      cols="60"
+      rows="10"
+    ></textarea>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      [disabled]="contactForm.invalid"
+    >
+      send message
+    </button>
+  </form>
+</div>

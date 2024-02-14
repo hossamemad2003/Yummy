@@ -1,0 +1,18 @@
+.container{
+  margin-left: 100px;
+  margin-top: 20px;
+  .box{
+    transition-duration: 2s;
+    &:hover{
+      cursor: pointer;
+      color: red;
+    }
+    i {
+        font-size: 70px;
+      }
+
+      p {
+        font-size: xx-large;
+      }
+}
+}

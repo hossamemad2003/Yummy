@@ -1,0 +1,12 @@
+<div class="container row">
+  <div
+    class="box col-md-3 col-sm-6"
+    (click)="gotoMealDetail(item.id)"
+    *ngFor="let item of mealList"
+  >
+    <img [src]="item.strMealThumb" alt="image of meal" />
+    <div class="content">
+      {{ item.strMeal }}
+    </div>
+  </div>
+</div>
